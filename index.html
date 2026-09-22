@@ -1,0 +1,103 @@
+E html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5d9e6">
+  <title>For Mansi, With All My Heart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="loader" id="loader"><div class="loader-heart">♥</div><span>putting a little something together...</span></div>
+  <div class="ambient" aria-hidden="true"><i><!DOCTYP</i><i></i><i></i><i></i></div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <button class="music-toggle" id="musicToggle" type="button" aria-label="Toggle background music">♫ <span>sound on</span></button>
+
+  <main id="story">
+    <section class="screen opening active" id="opening">
+      <div class="eyebrow">a tiny story, made just for you</div>
+      <h1>Hey, Mansi... <span>❤️</span></h1>
+      <p class="lead">I made something for you.<br>Don't close this yet...<br>Just give me 2 minutes. 🫶</p>
+      <button class="primary begin" data-next="special">Okay, I'm curious 👀</button>
+      <div class="scroll-hint">take a little journey <b>↓</b></div>
+    </section>
+
+    <section class="screen" id="special">
+      <div class="story-number">01 <span>— the special person</span></div>
+      <div class="story-copy reveal">
+        <p class="kicker">Do you know what's funny?</p>
+        <h2>Out of all the people I've met, <em>somehow you became</em> the person I look forward to talking to, Mansi.</h2>
+        <p class="soft-note">It wasn't planned. It just quietly happened.</p>
+        <button class="primary" data-next="beauty">Continue <span>❤️</span></button>
+      </div>
+    </section>
+
+    <section class="screen" id="beauty">
+      <div class="story-number">02 <span>— an unbiased opinion</span></div>
+      <div class="glass beauty-card reveal">
+        <div class="sparkle">✦</div>
+        <p class="kicker">According to my completely unbiased research... 🤓</p>
+        <div class="beauty-lines">
+          <h2 class="delayed-line">Mansi, you're probably the prettiest girl in the world.</h2>
+          <p class="delayed-line second">Okay fine...<br><strong>Not probably.<br>For me, you are. ❤️</strong></p>
+        </div>
+        <button class="primary" data-next="little-things">Next <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="screen" id="little-things">
+      <div class="story-number">03 <span>— the little things</span></div>
+      <div class="things-wrap reveal">
+        <h2>It's the little things.</h2>
+        <div class="things-grid">
+          <article class="thing"><span>01</span><h3>Your smile.</h3></article>
+          <article class="thing"><span>02</span><h3>Your way of talking.</h3></article>
+          <article class="thing"><span>03</span><h3>Your little reactions.</h3></article>
+          <article class="thing wide"><span>04</span><h3>The way you make normal conversations feel special.</h3></article>
+        </div>
+        <p class="closing-line">And honestly...<br><em>I don't know when it happened.</em></p>
+        <button class="primary" data-next="realization">Keep going <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="screen cinematic" id="realization">
+      <div class="cinema-glow"></div>
+      <div class="story-number">04 <span>— the realization</span></div>
+      <div class="cinema-copy reveal">
+        <p>But somewhere between<br>the random conversations,<br>the laughs, the little moments...</p>
+        <h2>I started realizing something.</h2>
+        <div class="realization-line">I like you.<br><em>A little more than I probably should. ❤️</em></div>
+        <button class="primary" data-next="confession">There's one more thing... <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="screen confession" id="confession">
+      <div class="confession-glow"></div>
+      <div class="story-number">05 <span>— honestly, from me to you</span></div>
+      <div class="confession-copy reveal">
+        <div class="tiny-heart">♡</div>
+        <p class="kicker">So... I have one question for you.</p>
+        <h2>Mansi, would you give me a chance<br>to turn this little story<br>into something beautiful? <span>❤️</span></h2>
+        <div class="choice-buttons">
+          <button class="primary yes" id="yesButton">Yes ❤️</button>
+          <button class="secondary think" id="thinkButton">Let me think 🫣</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen response" id="response">
+      <div class="response-card glass reveal" id="responseCard">
+        <div class="response-icon" id="responseIcon">♡</div>
+        <h2 id="responseTitle"></h2>
+        <p id="responseText"></p>
+        <button class="secondary" id="restartButton">Back to the beginning</button>
+      </div>
+    </section>
+  </main>
+  <footer>Made with a little courage, a lot of feelings, and probably too much overthinking. ❤️</footer>
+  <script src="script.js"></script>
+</body>
+</html>
